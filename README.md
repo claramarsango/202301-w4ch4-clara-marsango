@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+Teléfono React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aquí tienes la maquetación HTML/CSS de una aplicación, tendrás que programarla en React.
 
-## Available Scripts
+Se debe poder escribir un número de teléfono clicando en los botones numéricos. La tecla borrar puede borrar el último dígito o borrar el número completo, como prefieras.
+Sólo se verá o el botón Llamar o el botón Colgar, nunca los dos a la vez.
+No se puede introducir un número de más de 9 cifras.
+El botón Llamar sólo se puede pulsar si el número tiene 9 cifras. Cuando tenga 9 cifras el botón debe tener la clase "active".
+El mensaje superior "Calling..." sólo aparece cuando se pulsa el botón "Call" y mientras dure la llamada. Usa la clase "off" para controlar su visibilidad (el elemento HTML correspondiente debe seguir estando, aunque no se vea).
+Al pulsar el botón "Call", éste debe desaparecer del DOM y debe aparecer en su lugar el botón "Hang up". El teclado tiene que quedar deshabilitado.
+Al pulsar el botón "Hang up", éste debe desaparecer y debe aparecer en su lugar el botón "Call". El teclado tiene que habilitarse. Además, se debe borrar el número de teléfono.
+Si no ocurre nada tras cinco segundos de llamada, ésta se debe colgar automáticamente.
+Separa todo en los siguientes componentes:
 
-In the project directory, you can run:
+Info
+Display
+Actions
+Action
+Keyboard
+Key
+Guarda los estados comunes en un context.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Entrega el listado de responsabilidades.
